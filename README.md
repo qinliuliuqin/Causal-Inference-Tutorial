@@ -1,9 +1,10 @@
 # Causal-Inference-Tutorial
-This repository collects links pointing to learning materials for causal inferences, including online courses, seminars, and papers. 
-
 [Introduction to Causal Inference (in Chinese)](https://zhuanlan.zhihu.com/p/403098221)
 
 # Applications and Tools
+## Causality in Vision
+[Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/)
+
 ## Causal Inference in NLP
 [causal-text-papers](https://github.com/causaltext/causal-text-papers)
 
@@ -16,3 +17,6 @@ This repository collects links pointing to learning materials for causal inferen
 ## Causal Simulation Environment
 [CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/) \
 [causal-learn: Causal Discovery for Python](https://github.com/cmu-phil/causal-learn)
+
+# Groups Working on Causal Inference
+[Machine Reasoning and Learning (MReaL), ]
