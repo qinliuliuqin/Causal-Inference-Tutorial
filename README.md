@@ -18,5 +18,5 @@
 [CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/) \
 [causal-learn: Causal Discovery for Python](https://github.com/cmu-phil/causal-learn)
 
-# Groups Working on Causal Inference
-[Machine Reasoning and Learning (MReaL), ]
+# Other Links
+[MReaL Lab](https://mreallab.github.io/)
