@@ -1,5 +1,5 @@
 # Causal-Inference-Tutorial
-This repository collects learning materials for causal inferences, including online courses, seminars, and papers. 
+This repository collects links pointing to learning materials for causal inferences, including online courses, seminars, and papers. 
 
 [Introduction to Causal Inference (in Chinese)](https://zhuanlan.zhihu.com/p/403098221)
 
