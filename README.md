@@ -3,7 +3,7 @@ This repository collects links pointing to learning materials for causal inferen
 
 [Introduction to Causal Inference (in Chinese)](https://zhuanlan.zhihu.com/p/403098221)
 
-# Applications
+# Applications and Tools
 ## Causal Inference in NLP
 [causal-text-papers](https://github.com/causaltext/causal-text-papers)
 
@@ -12,3 +12,6 @@ This repository collects links pointing to learning materials for causal inferen
 [Towards Out-Of-Distribution Generalization: A Survey (2021)](https://arxiv.org/pdf/2108.13624.pdf) \
 [Out-of-Distribution Generalization in Machine Learning, PhD Thesis (2021)](https://arxiv.org/pdf/2103.02667.pdf) \
 [Out-of-Distribution Generalization: Categories and Paper List](http://out-of-distribution-generalization.com/)
+
+## Causal Simulation Environment
+[CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/)
