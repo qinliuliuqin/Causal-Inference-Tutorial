@@ -6,8 +6,8 @@
 [Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/)
 
 ## Causal Inference in NLP
-[causal-text-papers](https://github.com/causaltext/causal-text-papers)
-
+[causal-text-papers](https://github.com/causaltext/causal-text-papers) \
+[Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf)
 
 ## Out-of-Distribution Generalization
 [Towards Out-Of-Distribution Generalization: A Survey (2021)](https://arxiv.org/pdf/2108.13624.pdf) \
