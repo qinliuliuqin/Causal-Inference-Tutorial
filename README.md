@@ -14,4 +14,5 @@ This repository collects links pointing to learning materials for causal inferen
 [Out-of-Distribution Generalization: Categories and Paper List](http://out-of-distribution-generalization.com/)
 
 ## Causal Simulation Environment
-[CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/)
+[CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/) \
+[causal-learn: Causal Discovery for Python](https://github.com/cmu-phil/causal-learn)
