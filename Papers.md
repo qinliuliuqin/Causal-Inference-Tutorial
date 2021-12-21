@@ -6,3 +6,6 @@
 # Causal Representation Learning
 
 # Causal Inference in Computer Vision
+
+# Generative Modeling
+[CausalVAE: Disentangled Representation Learning via Neural Structural Causal Models](https://arxiv.org/pdf/2004.08697.pdf)
