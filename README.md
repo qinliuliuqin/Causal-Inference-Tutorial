@@ -3,11 +3,11 @@
 
 # Applications and Tools
 ## Causality in Vision
-[Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/)
+[Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/) \
+[Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf)
 
 ## Causal Inference in NLP
-[causal-text-papers](https://github.com/causaltext/causal-text-papers) \
-[Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf)
+[causal-text-papers](https://github.com/causaltext/causal-text-papers) 
 
 ## Out-of-Distribution Generalization
 [Towards Out-Of-Distribution Generalization: A Survey (2021)](https://arxiv.org/pdf/2108.13624.pdf) \
