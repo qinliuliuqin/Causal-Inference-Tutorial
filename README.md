@@ -1,5 +1,6 @@
 # Causal-Inference-Tutorial
-[Introduction to Causal Inference (in Chinese)](https://zhuanlan.zhihu.com/p/403098221)
+[Introduction to Causal Inference, Brady Neal](https://www.bradyneal.com/causal-inference-course)
+[因果推断-原理与方法，知乎](https://zhuanlan.zhihu.com/p/403098221)
 
 # Applications and Tools
 ## Causality in Vision
