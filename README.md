@@ -20,4 +20,6 @@
 [causal-learn: Causal Discovery for Python](https://github.com/cmu-phil/causal-learn)
 
 # Other Links
-[MReaL Lab](https://mreallab.github.io/)
+[MReaL Lab](https://mreallab.github.io/) \
+[NICO Dataset](http://nico.thumedialab.com/) \
+[3D Shapes Dataset](https://github.com/deepmind/3d-shapes)
