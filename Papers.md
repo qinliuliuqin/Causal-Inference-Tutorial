@@ -6,6 +6,9 @@
 [Keith, Katherine A., David Jensen, and Brendan O'Connor. "Text and causal inference: A review of using text to remove confounding from causal estimates." arXiv preprint arXiv:2005.00649 (2020).](https://arxiv.org/pdf/2005.00649.pdf) \
 [Causality for Machine Learning (2019)](https://arxiv.org/pdf/1911.10500.pdf)
 
+# Causal Discovery
+[Amortized Causal Discovery: Learning to Infer Causal Graphs from Time-Series Data](https://arxiv.org/pdf/2006.10833.pdf)
+
 # Causal Reduction
 [Efficient Causal Inference from Combined Observational and Interventional Data through Causal Reductions](https://arxiv.org/pdf/2103.04786.pdf)
 
