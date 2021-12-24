@@ -6,7 +6,8 @@
 ## Causality in Vision
 [Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/) \
 [Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf) \
-[Deconfounded Video Moment Retrieval with Causal Intervention, SIGIR 2021](https://arxiv.org/pdf/2106.01534.pdf)
+[Deconfounded Video Moment Retrieval with Causal Intervention, SIGIR 2021](https://arxiv.org/pdf/2106.01534.pdf) \
+[Discovering Causal Signals in Images, CVPR 2017](https://leon.bottou.org/publications/pdf/cvpr-2017.pdf)
 
 ## Causal Inference in NLP
 [causal-text-papers](https://github.com/causaltext/causal-text-papers) 
