@@ -24,4 +24,5 @@
 # Other Links
 [MReaL Lab](https://mreallab.github.io/) \
 [NICO Dataset](http://nico.thumedialab.com/) \
-[3D Shapes Dataset](https://github.com/deepmind/3d-shapes)
+[3D Shapes Dataset](https://github.com/deepmind/3d-shapes) \
+[Kun Zhang, CMU](https://www.andrew.cmu.edu/user/kunz1/index.html)
