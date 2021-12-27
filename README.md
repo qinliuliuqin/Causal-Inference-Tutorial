@@ -3,6 +3,9 @@
 [因果推断-原理与方法，知乎](https://zhuanlan.zhihu.com/p/403098221)
 
 # Applications and Tools
+## Machine Learning
+[Causal Inference & Machine Learning, NIPS21 Workshop](https://why21.causalai.net/papers.html)
+
 ## Causality in Vision
 [Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/) \
 [Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf) \
