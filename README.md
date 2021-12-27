@@ -25,4 +25,5 @@
 [MReaL Lab](https://mreallab.github.io/) \
 [NICO Dataset](http://nico.thumedialab.com/) \
 [3D Shapes Dataset](https://github.com/deepmind/3d-shapes) \
-[Kun Zhang, CMU](https://www.andrew.cmu.edu/user/kunz1/index.html)
+[Kun Zhang, CMU](https://www.andrew.cmu.edu/user/kunz1/index.html) \
+[CausalML Package](https://causalml.readthedocs.io/en/latest/causalml.html#module-causalml.optimize)
