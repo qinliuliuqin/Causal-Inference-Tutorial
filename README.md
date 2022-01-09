@@ -16,7 +16,8 @@
 
 ## Causal Inference in NLP
 [causal-text-papers](https://github.com/causaltext/causal-text-papers) \
-[Counterfactual VQA](https://openaccess.thecvf.com/content/CVPR2021/papers/Niu_Counterfactual_VQA_A_Cause-Effect_Look_at_Language_Bias_CVPR_2021_paper.pdf)
+[Counterfactual VQA](https://openaccess.thecvf.com/content/CVPR2021/papers/Niu_Counterfactual_VQA_A_Cause-Effect_Look_at_Language_Bias_CVPR_2021_paper.pdf) \
+[Introspective Distillation for Robust Question Answering](https://openreview.net/pdf?id=OBLl2xoDHPw)
 
 ## Out-of-Distribution Generalization
 [Towards Out-Of-Distribution Generalization: A Survey (2021)](https://arxiv.org/pdf/2108.13624.pdf) \
