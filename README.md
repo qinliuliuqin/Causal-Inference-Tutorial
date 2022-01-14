@@ -1,7 +1,8 @@
 # Causal-Inference-Tutorial
 [Introduction to Causal Inference, Brady Neal](https://www.bradyneal.com/causal-inference-course) \
 [因果推断-原理与方法，知乎](https://zhuanlan.zhihu.com/p/403098221) \
-[On Pearl’s Hierarchy and the Foundations of Causal Inference](https://causalai.net/r60.pdf)
+[On Pearl’s Hierarchy and the Foundations of Causal Inference](https://causalai.net/r60.pdf) \
+[Deep Learning for Causal Inference](https://github.com/kochbj/Deep-Learning-for-Causal-Inference)
 
 # Applications and Tools
 ## Machine Learning
