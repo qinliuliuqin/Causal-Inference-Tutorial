@@ -15,7 +15,9 @@
 [Deconfounded Video Moment Retrieval with Causal Intervention, SIGIR 2021](https://arxiv.org/pdf/2106.01534.pdf) \
 [Discovering Causal Signals in Images, CVPR 2017](https://leon.bottou.org/publications/pdf/cvpr-2017.pdf) \
 [Causal Intervention for Weakly-Supervised Semantic Segmentation](https://arxiv.org/pdf/2009.12547.pdf) \
-[Cross-Domain Empirical Risk Minimization for Unbiased Long-tailed Classification, AAAI 2022](https://arxiv.org/pdf/2112.14380.pdf)
+[Cross-Domain Empirical Risk Minimization for Unbiased Long-tailed Classification, AAAI 2022](https://arxiv.org/pdf/2112.14380.pdf) \
+[Counterfactual Attention Learning for Fine-Grained Visual Categorization and Re-identification](https://arxiv.org/pdf/2108.08728.pdf)
+
 
 ## Causal Inference in NLP
 [causal-text-papers](https://github.com/causaltext/causal-text-papers) \
