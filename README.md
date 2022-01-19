@@ -6,6 +6,7 @@
 
 # Datasets
 [CANDLE: An Image Dataset for Causal Analysis in Disentangled Representations](https://www.causalityinvision.com/papers/0015.pdf) \
+[On Causally Disentangled Representations](https://arxiv.org/pdf/2112.05746.pdf)
 
 
 # Applications and Tools
