@@ -11,7 +11,7 @@
 
 
 # Applications and Tools
-## Machine Learning
+## Causality in Machine Learning
 [Causal Inference & Machine Learning, NIPS21 Workshop](https://why21.causalai.net/papers.html) \
 [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
 
