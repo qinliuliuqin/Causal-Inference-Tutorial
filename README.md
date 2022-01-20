@@ -15,8 +15,6 @@
 [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
 
 ## Causality in Vision
-[Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/) \
-[Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf) \
 [Deconfounded Video Moment Retrieval with Causal Intervention, SIGIR 2021](https://arxiv.org/pdf/2106.01534.pdf) \
 [Discovering Causal Signals in Images, CVPR 2017](https://leon.bottou.org/publications/pdf/cvpr-2017.pdf) \
 [Causal Intervention for Weakly-Supervised Semantic Segmentation](https://arxiv.org/pdf/2009.12547.pdf) \
@@ -32,6 +30,8 @@
 [Out-of-Distribution Generalization: Categories and Paper List](http://out-of-distribution-generalization.com/) \
 [In Search of Lost Domain Generalization](https://arxiv.org/pdf/2007.01434.pdf)
 
+### Topic 3: Medical Image Analysis
+[Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf) \
 
 
 ## Causality in NLP
@@ -42,6 +42,9 @@
 ## Causal Simulation Environment
 [CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/) \
 [causal-learn: Causal Discovery for Python](https://github.com/cmu-phil/causal-learn)
+
+# Conferences and Seminars
+[Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/)
 
 # Other Links
 [MReaL Lab](https://mreallab.github.io/) \
