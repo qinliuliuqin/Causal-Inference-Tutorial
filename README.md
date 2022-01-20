@@ -6,7 +6,6 @@
 
 # Datasets
 [CANDLE: An Image Dataset for Causal Analysis in Disentangled Representations](https://www.causalityinvision.com/papers/0015.pdf) \
-[On Causally Disentangled Representations](https://arxiv.org/pdf/2112.05746.pdf) \
 [On the Transfer of Inductive Bias from Simulation to the Real World: a New Disentanglement Dataset](https://github.com/rr-learning/disentanglement_dataset)
 
 
@@ -24,16 +23,21 @@
 [Cross-Domain Empirical Risk Minimization for Unbiased Long-tailed Classification, AAAI 2022](https://arxiv.org/pdf/2112.14380.pdf) \
 [Counterfactual Attention Learning for Fine-Grained Visual Categorization and Re-identification](https://arxiv.org/pdf/2108.08728.pdf)
 
-## Causality in NLP
-[causal-text-papers](https://github.com/causaltext/causal-text-papers) \
-[Counterfactual VQA](https://openaccess.thecvf.com/content/CVPR2021/papers/Niu_Counterfactual_VQA_A_Cause-Effect_Look_at_Language_Bias_CVPR_2021_paper.pdf) \
-[Introspective Distillation for Robust Question Answering](https://openreview.net/pdf?id=OBLl2xoDHPw)
+### Topic 1: Causal Disentangled Representation Learning
+[On Causally Disentangled Representations](https://arxiv.org/pdf/2112.05746.pdf)
 
-## Out-of-Distribution Generalization
+### Topic 2: Out-of-Distribution Generalization
 [Towards Out-Of-Distribution Generalization: A Survey (2021)](https://arxiv.org/pdf/2108.13624.pdf) \
 [Out-of-Distribution Generalization in Machine Learning, PhD Thesis (2021)](https://arxiv.org/pdf/2103.02667.pdf) \
 [Out-of-Distribution Generalization: Categories and Paper List](http://out-of-distribution-generalization.com/) \
 [In Search of Lost Domain Generalization](https://arxiv.org/pdf/2007.01434.pdf)
+
+
+
+## Causality in NLP
+[causal-text-papers](https://github.com/causaltext/causal-text-papers) \
+[Counterfactual VQA](https://openaccess.thecvf.com/content/CVPR2021/papers/Niu_Counterfactual_VQA_A_Cause-Effect_Look_at_Language_Bias_CVPR_2021_paper.pdf) \
+[Introspective Distillation for Robust Question Answering](https://openreview.net/pdf?id=OBLl2xoDHPw)
 
 ## Causal Simulation Environment
 [CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/) \
