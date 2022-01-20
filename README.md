@@ -1,20 +1,20 @@
-# Causal-Inference-Tutorial
+# 1. Causal-Inference-Tutorial
 [Introduction to Causal Inference, Brady Neal](https://www.bradyneal.com/causal-inference-course) \
 [因果推断-原理与方法，知乎](https://zhuanlan.zhihu.com/p/403098221) \
 [On Pearl’s Hierarchy and the Foundations of Causal Inference](https://causalai.net/r60.pdf) \
 [Deep Learning for Causal Inference](https://github.com/kochbj/Deep-Learning-for-Causal-Inference)
 
-# Datasets
+# 2. Datasets
 [CANDLE: An Image Dataset for Causal Analysis in Disentangled Representations](https://www.causalityinvision.com/papers/0015.pdf) \
 [On the Transfer of Inductive Bias from Simulation to the Real World: a New Disentanglement Dataset](https://github.com/rr-learning/disentanglement_dataset)
 
 
-# Applications and Tools
-## Causality in Machine Learning
+# 3. Applications and Tools
+## 3.1 Causality in Machine Learning
 [Causal Inference & Machine Learning, NIPS21 Workshop](https://why21.causalai.net/papers.html) \
 [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
 
-## Causality in Vision
+## 3.2 Causality in Vision
 [Deconfounded Video Moment Retrieval with Causal Intervention, SIGIR 2021](https://arxiv.org/pdf/2106.01534.pdf) \
 [Discovering Causal Signals in Images, CVPR 2017](https://leon.bottou.org/publications/pdf/cvpr-2017.pdf) \
 [Causal Intervention for Weakly-Supervised Semantic Segmentation](https://arxiv.org/pdf/2009.12547.pdf) \
@@ -34,19 +34,19 @@
 [Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf) \
 
 
-## Causality in NLP
+## 3.3 Causality in NLP
 [causal-text-papers](https://github.com/causaltext/causal-text-papers) \
 [Counterfactual VQA](https://openaccess.thecvf.com/content/CVPR2021/papers/Niu_Counterfactual_VQA_A_Cause-Effect_Look_at_Language_Bias_CVPR_2021_paper.pdf) \
 [Introspective Distillation for Robust Question Answering](https://openreview.net/pdf?id=OBLl2xoDHPw)
 
-## Causal Simulation Environment
+## 3.4 Causal Simulation Environment
 [CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/) \
 [causal-learn: Causal Discovery for Python](https://github.com/cmu-phil/causal-learn)
 
-# Conferences and Seminars
+# 3.5 Conferences and Seminars
 [Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/)
 
-# Other Links
+# 3.6 Other Links
 [MReaL Lab](https://mreallab.github.io/) \
 [NICO Dataset](http://nico.thumedialab.com/) \
 [3D Shapes Dataset](https://github.com/deepmind/3d-shapes) \
