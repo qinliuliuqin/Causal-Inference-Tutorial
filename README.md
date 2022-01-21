@@ -5,7 +5,7 @@
 [Deep Learning for Causal Inference](https://github.com/kochbj/Deep-Learning-for-Causal-Inference)
 
 # 2. Datasets
-[CANDLE: An Image Dataset for Causal Analysis in Disentangled Representations](https://www.causalityinvision.com/papers/0015.pdf)[[Link]](https://causal-disentanglement.github.io/IITH-CANDLE/) \
+[CANDLE: An Image Dataset for Causal Analysis in Disentangled Representations](https://causal-disentanglement.github.io/IITH-CANDLE/) \
 [On the Transfer of Inductive Bias from Simulation to the Real World: a New Disentanglement Dataset](https://github.com/rr-learning/disentanglement_dataset)
 
 
