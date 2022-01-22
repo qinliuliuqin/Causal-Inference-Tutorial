@@ -15,6 +15,7 @@
 [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
 
 ## 3.2 Causality in Vision
+[Counterfactual Generative Networks, ICLR 2021](http://www.cvlibs.net/publications/Sauer2021ICLR.pdf) \
 [Deconfounded Video Moment Retrieval with Causal Intervention, SIGIR 2021](https://arxiv.org/pdf/2106.01534.pdf) \
 [Discovering Causal Signals in Images, CVPR 2017](https://leon.bottou.org/publications/pdf/cvpr-2017.pdf) \
 [Causal Intervention for Weakly-Supervised Semantic Segmentation](https://arxiv.org/pdf/2009.12547.pdf) \
