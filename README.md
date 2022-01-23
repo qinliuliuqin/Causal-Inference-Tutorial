@@ -44,10 +44,10 @@
 [CausalCity: Complex Simulations with Agency for Causal Discovery and Reasoning](https://causalcity.github.io/) \
 [causal-learn: Causal Discovery for Python](https://github.com/cmu-phil/causal-learn)
 
-# 4 Conferences and Seminars
+# 4. Conferences and Seminars
 [Causality in Vision, CVPR 2021 Workshop](http://www.causalityinvision.com/)
 
-# 5 Other Links
+# 5. Other Links
 [MReaL Lab](https://mreallab.github.io/) \
 [NICO Dataset](http://nico.thumedialab.com/) \
 [3D Shapes Dataset](https://github.com/deepmind/3d-shapes) \
