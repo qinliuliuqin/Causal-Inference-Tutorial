@@ -33,7 +33,7 @@
 
 ### Topic 3: Medical Image Analysis
 [Causality matters in medical imaging](https://www.nature.com/articles/s41467-020-17478-w.pdf) \
-
+[Deep Structural Causal Models for Tractable Counterfactual Inference, NIPS 2020](https://proceedings.neurips.cc/paper/2020/file/0987b8b338d6c90bbedd8631bc499221-Paper.pdf)
 
 ## 3.3 Causality in NLP
 [causal-text-papers](https://github.com/causaltext/causal-text-papers) \
