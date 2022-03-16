@@ -16,12 +16,14 @@
 [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
 
 ## 3.2 Causality in Vision
+[Learning Causal Representation for Training Cross-Domain Pose Estimator via Generative Interventions, ICCV2021](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Learning_Causal_Representation_for_Training_Cross-Domain_Pose_Estimator_via_Generative_ICCV_2021_paper.pdf) \
 [Counterfactual Generative Networks, ICLR 2021](http://www.cvlibs.net/publications/Sauer2021ICLR.pdf) \
 [Deconfounded Video Moment Retrieval with Causal Intervention, SIGIR 2021](https://arxiv.org/pdf/2106.01534.pdf) \
 [Discovering Causal Signals in Images, CVPR 2017](https://leon.bottou.org/publications/pdf/cvpr-2017.pdf) \
 [Causal Intervention for Weakly-Supervised Semantic Segmentation](https://arxiv.org/pdf/2009.12547.pdf) \
 [Cross-Domain Empirical Risk Minimization for Unbiased Long-tailed Classification, AAAI 2022](https://arxiv.org/pdf/2112.14380.pdf) \
 [Counterfactual Attention Learning for Fine-Grained Visual Categorization and Re-identification](https://arxiv.org/pdf/2108.08728.pdf)
+
 
 ### Topic 1: Causal Disentangled Representation Learning
 [On Causally Disentangled Representations](https://arxiv.org/pdf/2112.05746.pdf)
