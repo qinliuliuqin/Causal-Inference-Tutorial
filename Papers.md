@@ -20,3 +20,9 @@
 
 ## Generative Modeling
 [CausalVAE: Disentangled Representation Learning via Neural Structural Causal Models](https://arxiv.org/pdf/2004.08697.pdf)
+
+## Papers citing CausalVAE
+[D’ya like DAGs? A Survey on Structure Learning and Causal Discovery](https://arxiv.org/pdf/2103.02582.pdf): This is very good review.
+
+[Learning latent causal graphs via mixture oracles](https://openreview.net/pdf?id=f9mSLa07Ncc): This work is highly related to our current work.
+
