@@ -26,3 +26,6 @@
 
 [Learning latent causal graphs via mixture oracles](https://openreview.net/pdf?id=f9mSLa07Ncc): This work is highly related to our current work.
 
+[Fairness through Causal Awareness: Learning Causal Latent-Variable Models for Biased Data](https://sci-hub.hkvisa.net/https://doi.org/10.1145/3287560.3287564)
+
+[Counterfactual Fairness with Disentangled Causal Effect Variational Autoencoder](https://www.aaai.org/AAAI21Papers/AAAI-6311.KimH.pdf): Disentangling the exogenous uncertainty into two latent variables: either 1) independent to interventions or 2) correlated to interventions without causality.
