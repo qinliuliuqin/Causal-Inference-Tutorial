@@ -11,6 +11,7 @@
 
 # 3. Applications and Tools
 ## 3.1 Causality in Machine Learning
+[Deep End-to-end Causal Inference, ICML22 in submission](https://arxiv.org/pdf/2202.02195.pdf) \
 [Causal Machine Learning, Microsoft Research Summit 2021](https://www.microsoft.com/en-us/research/video/opening-remarks-causal-machine-learning/) \
 [Causal Inference & Machine Learning, NIPS21 Workshop](https://why21.causalai.net/papers.html) \
 [Causal Effect Inference with Deep Latent-Variable Models](https://arxiv.org/pdf/1705.08821.pdf)
