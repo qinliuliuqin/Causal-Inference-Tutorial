@@ -1,28 +1,20 @@
-import torch
-from torch import nn
-from torch.nn import functional as F
-from typing import List, TypeVar, Any
-
+from abc import abstractmethod
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import numpy as np
 import os
-import torch
-import torchvision.datasets as datasets
-import torchvision.transforms as transforms
-import torch.optim as optim
-import torch.nn as nn
-import torch.nn.functional as F
-
-import torchvision.datasets.vision as vision
-import torchvision.io as io
 from pathlib import Path
 import random
-
-from typing import Any, Callable, Dict, List, Optional, Tuple
-
+import torch
 from torch import nn
-from abc import abstractmethod
+from torch.nn import functional as F
+import torchvision.transforms as transforms
+import torchvision.datasets.vision as vision
+import torchvision.io as io
+import torch.optim as optim
+
+from typing import Any, TypeVar, Callable, Dict, List, Optional, Tuple
+
 
 Tensor = TypeVar("torch.tensor")
 
@@ -280,27 +272,33 @@ class DAVIS(vision.VisionDataset):
         return torch.stack(video_frames_data, dim=0).float()
 
 
-# build DAVIS dataset
+## Dataset Parameters
 davis_root = '/playpen-raid2/qinliu/data/DAVIS'
-trainset = DAVIS(root=davis_root, num_frames=10, train=True)
+mb_size = 1 # each batch use only one video 
+num_frames = 10 # each video uses 10 consecutive frames for training
+
+## Training Parameters
+in_channels = 3
+latent_dim = 128
+c = 0
+lr = 1e-4
+device = torch.device("cuda:3")
+
+
+# Build dataset
+trainset = DAVIS(root=davis_root, num_frames=num_frames, train=True)
 valset = DAVIS(root=davis_root, num_frames=1, train=False)
 
-mb_size = 1
 train_loader = torch.utils.data.DataLoader(trainset, batch_size=mb_size, 
                                            shuffle=True, num_workers=1)
 
 val_loader = torch.utils.data.DataLoader(valset, batch_size=mb_size, 
                                           shuffle=False, num_workers=1)
 
-device = torch.device("cuda:3")
 
-num_frames = 10
-model = VanillaVAE(3, 128, num_frames=num_frames, in_spatial_H=256, in_spatial_W=512, \
+model = VanillaVAE(in_channels, latent_dim, num_frames=num_frames, in_spatial_H=256, in_spatial_W=512, \
     num_hidden_layers=6, hidden_dims=[8, 16, 32, 64, 128, 256])
 model.to(device)
-
-c = 0
-lr = 1e-4
 
 solver = optim.Adam(model.parameters(), lr=lr)
 
