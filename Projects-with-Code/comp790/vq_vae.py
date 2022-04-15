@@ -345,7 +345,7 @@ train_loader = torch.utils.data.DataLoader(trainset, batch_size=mb_size,
                                            shuffle=True, num_workers=1)
 
 val_loader = torch.utils.data.DataLoader(valset, batch_size=mb_size, 
-                                          shuffle=False, num_workers=1)
+                                          shuffle=True, num_workers=1)
 
 
 train_res_recon_error = []
@@ -398,6 +398,8 @@ for i in range(num_training_updates):
         fig_idx += 1
         plt.close(fig)
 
+        # save the model
+        torch.save(model.state_dict(), 'out/model.pt')
+
         model.train()
 
-torch.save(model.state_dict(), 'out/model.pt')
