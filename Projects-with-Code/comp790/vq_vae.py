@@ -79,6 +79,25 @@ class VectorQuantizerEMA(nn.Module):
         self._decay = decay
         self._epsilon = epsilon
 
+    def quantize(self, encoding_indices):
+        return self._embedding(encoding_indices)
+
+    def get_code_indices(self, inputs):
+        # convert inputs from BCHW -> BHWC
+        inputs = inputs.permute(0, 2, 3, 1).contiguous()
+
+        # Flatten input
+        flat_input = inputs.view(-1, self._embedding_dim)
+        
+        # Calculate distances
+        distances = (torch.sum(flat_input**2, dim=1, keepdim=True) 
+                    + torch.sum(self._embedding.weight**2, dim=1)
+                    - 2 * torch.matmul(flat_input, self._embedding.weight.t()))
+            
+        # Encoding
+        encoding_indices = torch.argmin(distances, dim=1)
+        return encoding_indices
+
     def forward(self, inputs):
         # convert inputs from BCHW -> BHWC
         inputs = inputs.permute(0, 2, 3, 1).contiguous()
@@ -305,6 +324,12 @@ class Model(nn.Module):
                                 num_residual_layers, 
                                 num_residual_hiddens)
 
+    def get_code_indices(self, x):
+        z = self._encoder(x)
+        z = self._pre_vq_conv(z)
+
+        return self._vq_vae.get_code_indices(z)
+
     def forward(self, x):
         z = self._encoder(x)
         z = self._pre_vq_conv(z)
@@ -314,92 +339,93 @@ class Model(nn.Module):
         return loss, x_recon, perplexity
 
 
-device = torch.device("cuda:3")
-num_training_updates = 500000
-num_hiddens = 128
-num_residual_hiddens = 32
-num_residual_layers = 2
-embedding_dim = 64
-num_embeddings = 512
-commitment_cost = 0.25
-decay = 0.99
-learning_rate = 1e-3
+def main():
+    device = torch.device("cuda:3")
+    num_training_updates = 500000
+    num_hiddens = 128
+    num_residual_hiddens = 32
+    num_residual_layers = 2
+    embedding_dim = 64
+    num_embeddings = 512
+    commitment_cost = 0.25
+    decay = 0.99
+    learning_rate = 1e-3
 
-model = Model(num_hiddens, num_residual_layers, num_residual_hiddens,
-              num_embeddings, embedding_dim, 
-              commitment_cost, decay).to(device)
+    model = Model(num_hiddens, num_residual_layers, num_residual_hiddens,
+                num_embeddings, embedding_dim, 
+                commitment_cost, decay).to(device)
 
-optimizer = optim.Adam(model.parameters(), lr=learning_rate, amsgrad=False)
-
-
-## Dataset Parameters
-mb_size = 1 # each batch use only one video 
-num_frames = 12 # each video uses 10 consecutive frames for training
-davis_root = '/playpen-raid2/qinliu/data/DAVIS'
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate, amsgrad=False)
 
 
-trainset = DAVIS(root=davis_root, num_frames=num_frames, train=True)
-valset = DAVIS(root=davis_root, num_frames=num_frames, train=False)
-
-train_loader = torch.utils.data.DataLoader(trainset, batch_size=mb_size, 
-                                           shuffle=True, num_workers=1)
-
-val_loader = torch.utils.data.DataLoader(valset, batch_size=mb_size, 
-                                          shuffle=True, num_workers=1)
+    ## Dataset Parameters
+    mb_size = 1 # each batch use only one video 
+    num_frames = 12 # each video uses 10 consecutive frames for training
+    davis_root = '/playpen-raid2/qinliu/data/DAVIS'
 
 
-train_res_recon_error = []
-train_res_perplexity = []
+    trainset = DAVIS(root=davis_root, num_frames=num_frames, train=True)
+    valset = DAVIS(root=davis_root, num_frames=num_frames, train=False)
 
-model.train()
-fig_idx = 0
-for i in range(num_training_updates):
-    data, _ = next(iter(train_loader))
-    data = torch.squeeze(data, dim=0)
-    data = data.to(device)
-    optimizer.zero_grad()
+    train_loader = torch.utils.data.DataLoader(trainset, batch_size=mb_size, 
+                                            shuffle=True, num_workers=1)
 
-    vq_loss, data_recon, perplexity = model(data)
-    recon_error = F.mse_loss(data_recon, data)
-    loss = recon_error + vq_loss
-    loss.backward()
+    val_loader = torch.utils.data.DataLoader(valset, batch_size=mb_size, 
+                                            shuffle=True, num_workers=1)
 
-    optimizer.step()
-    
-    train_res_recon_error.append(recon_error.item())
-    train_res_perplexity.append(perplexity.item())
 
-    if (i+1) % 20 == 0:
-        print('%d iterations' % (i+1))
-        print('recon_error: %.3f' % np.mean(train_res_recon_error[-100:]))
-        print('perplexity: %.3f' % np.mean(train_res_perplexity[-100:]))
+    train_res_recon_error = []
+    train_res_perplexity = []
 
-    if (i+1) % 1000 == 0:
-        model.eval()
+    model.train()
+    fig_idx = 0
+    for i in range(num_training_updates):
+        data, _ = next(iter(train_loader))
+        data = torch.squeeze(data, dim=0)
+        data = data.to(device)
+        optimizer.zero_grad()
 
-        valid_originals, _ = next(iter(val_loader))
-        valid_originals = torch.squeeze(valid_originals, dim=0)
-        valid_originals = valid_originals.to(device)
+        vq_loss, data_recon, perplexity = model(data)
+        recon_error = F.mse_loss(data_recon, data)
+        loss = recon_error + vq_loss
+        loss.backward()
 
-        vq_output_eval = model._pre_vq_conv(model._encoder(valid_originals))
-        _, valid_quantize, _, _ = model._vq_vae(vq_output_eval)
-        valid_reconstructions = model._decoder(valid_quantize)
+        optimizer.step()
+        
+        train_res_recon_error.append(recon_error.item())
+        train_res_perplexity.append(perplexity.item())
 
-        grid_img = make_grid(valid_reconstructions.cpu().data, nrow=4)
-        grid_img = grid_img.numpy()
+        if (i+1) % 20 == 0:
+            print('%d iterations' % (i+1))
+            print('recon_error: %.3f' % np.mean(train_res_recon_error[-100:]))
+            print('perplexity: %.3f' % np.mean(train_res_perplexity[-100:]))
 
-        fig = plt.figure(figsize=(16, 12))
-        plt.imshow(np.transpose(grid_img, (1,2,0)), interpolation='nearest')
+        if (i+1) % 1000 == 0:
+            model.eval()
 
-        if not os.path.exists('out/'):
-            os.makedirs('out/')
+            valid_originals, _ = next(iter(val_loader))
+            valid_originals = torch.squeeze(valid_originals, dim=0)
+            valid_originals = valid_originals.to(device)
 
-        plt.savefig('out/{}.png'.format(str(fig_idx).zfill(3)), bbox_inches='tight')
-        fig_idx += 1
-        plt.close(fig)
+            vq_output_eval = model._pre_vq_conv(model._encoder(valid_originals))
+            _, valid_quantize, _, _ = model._vq_vae(vq_output_eval)
+            valid_reconstructions = model._decoder(valid_quantize)
 
-        # save the model
-        torch.save(model.state_dict(), 'out/model.pt')
+            grid_img = make_grid(valid_reconstructions.cpu().data, nrow=4)
+            grid_img = grid_img.numpy()
 
-        model.train()
+            fig = plt.figure(figsize=(16, 12))
+            plt.imshow(np.transpose(grid_img, (1,2,0)), interpolation='nearest')
+
+            if not os.path.exists('out/'):
+                os.makedirs('out/')
+
+            plt.savefig('out/{}.png'.format(str(fig_idx).zfill(3)), bbox_inches='tight')
+            fig_idx += 1
+            plt.close(fig)
+
+            # save the model
+            torch.save(model.state_dict(), 'out/model.pt')
+
+            model.train()
 
